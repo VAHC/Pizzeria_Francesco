@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Francesco: Contacto</title>
+    <link
+      rel="shortcut icon"
+      href="../static/img/FAVICON/FAVICON.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="../static/img/LOGO/logo.png.png" class="logo" id="logo-left" alt="logo_pizzeria"/>
+
+      <div class="Titulo">
+        <h1 id="Textopp">
+          Francesco, pizza a la piedra. 
+          <br /> <br />
+          Cocinando las mejores pizzas para vos
+          <i class="encabezado">desde 1985.</i>
+        </h1>
+      </div>
+      <img src="../static/img/LOGO/logo.png.png" class="logo" id="logo-right" alt="logo_pizzeria"/>
+    </header>
+
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="menu_salon.html">Menú Salón</a>
+      <a href="menu_delivery.html">Menú Delivery</a>
+      <a href="contacto.html">Contacto</a>
+      <!-- <a href="crud_pizzas.html">CRUD Pizzas</a>
+      <a href="crud_usuarios.html">CRUD Usuarios</a> -->
+      <a href="gestion-crud.html">Gestión</a>
+      
+    </nav>
+
+    <main>
+      <h2 class="nombre_de_plantilla"> Contacto </h2>
+      
+
+      <form   id="formulario_de_contacto"  method="post">
+
+        <label class="tform" for="nombre">Nombre:</label>
+        <input class="botton"
+          type="text"
+          size="30"
+          id="nombre"
+          name="nombre"
+          placeholder="Ingrese su Nombre..."
+          
+        /><br /><br />
+
+        <label class="tform" for="apellido">Apellido:</label>
+        <input class="botton"
+          type="text"
+          size="30"
+          id="apellido"
+          name="apellido"
+          placeholder="Ingrese su Apellido..."
+          
+        /><br /><br />
+        
+        <label class="tform" for="email">Correo electrónico:</label>
+        <input class="botton"
+          type="email"
+          size="30"
+          id="email"
+          name="email"
+          placeholder="Ingrese su Dirección de Correo..."
+        
+        /><br /><br />
+
+        <label class="tform" for="edad">Edad:</label>
+        <input class="botton"
+          type="number"
+          id="edad"
+          name="edad"
+          placeholder="Ingrese su Edad..."
+          
+        /><br /><br />
+
+        <label class="tform" for="celular">Teléfono Celular:</label>
+        <input class="botton"
+          type="tel"
+          size="30"
+          id="celular"
+          name="celular"
+          placeholder="Ingrese su Número de Celular..."
+        
+        /><br /><br />
+
+        <label class="tform" for="motivo_consulta">Motivo de la consulta:</label>
+        <select id="motivo_consulta" name="motivo_consulta" >
+          <option value="default">Seleccione el motivo</option>
+          <option value="option1">Realizar una reserva</option>
+          <option value="option2">
+            Consultar sobre los días y horarios de apertura
+          </option>
+          <option value="option3">Realizar una crítica, queja o reclamo</option>
+          <option value="option4">
+            Realizar una sugerencia, propuesta o recomendación
+          </option>
+          <option value="option5">Otros motivos</option></select
+
+        ><br /><br />
+
+        <label class="tform" for="mensaje">Mensaje:</label>
+        <textarea class="bottonm"
+          id="mensaje"
+          name="mensaje"
+          rows="4"
+          cols="50"
+          placeholder="Escriba aquí su mensaje..."
+          
+        ></textarea
+
+        ><br /><br />
+        
+        <p class="check"><input type="checkbox" id="suscribirse" name="suscribirse" />
+        <label class="tform" for="suscribirse"
+          > Deseo recibir información con las últimas promociones y novedades de
+          Francesco en mi correo</label></p>
+        
+        <br /><br />
+
+        <button class="enviar" type="submit">Enviar</button>
+        
+        <p id="error" class="error">   </p>
+
+       
+
+      </form>
+
+      <br /><br />
+
+    </main>
+
+    <footer>
+      <p><u>Ubicación:</u> Mar del Plata, Buenos Aires, Argentina</p>
+      <p><u>Dirección:</u> Bernardo de Irigoyen 3498</p>
+      <p><u>Teléfonos:</u> 451-6194 / 486-3137 </p>
+      <p><u>Días y horarios de atención:</u> Todos los días de 19 a 23.30 hs</p>
+      <p><u>Consultas:</u> francesco@hotmail.com</p>
+    </footer>
+  
+    <script src="../static/js/validación_formulario.js"> </script>
+
+  </body>
+</html>

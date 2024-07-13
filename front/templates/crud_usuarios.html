@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francesco: Usuarios</title>
+    <link rel="shortcut icon" href="../static/img/FAVICON/FAVICON.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Agregar fontawesome -->
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+
+
+    <!-- HACEMOS REFERENCIA A UN DOCUMENTO CSS EXTERNO -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/crud_pizzas.css">
+    
+
+    <!-- INTERNO AL DOCUMENTO -->
+    <!-- <script>
+        alert('Hola mundo JS C#24162 😎');
+    </script> -->
+</head>
+
+
+<body >
+
+    <header>
+        <img src="../static/img/LOGO/logo.png.png" class="logo"  id="logo-left" alt="logo_pizzeria"> 
+       
+       <div class="Titulo">
+           <h1 id="Textopp">
+               Francesco, pizza a la piedra.
+                <br /> <br />
+               Cocinando las mejores pizzas para vos
+               <i class="encabezado">desde 1985.</i>
+           </h1>
+       </div>
+
+       <img src="../static/img/LOGO/logo.png.png" class="logo" id="logo-right" alt="logo_pizzeria" />
+   
+   </header>
+    
+   <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="menu_salon.html">Menú Salón</a>
+    <a href="menu_delivery.html">Menú Delivery</a>
+    <a href="contacto.html">Contacto</a>
+    <!-- <a href="crud_pizzas.html">CRUD Pizzas</a>
+    <a href="crud_usuarios.html">CRUD Usuarios</a> -->
+    <a href="gestion-crud.html">Gestión</a>
+
+</nav>
+
+    <main> 
+        <section id="form" class="container ">
+            
+            <h2 class="nombre_de_plantilla"> Ingreso de Usuarios </h2>
+         
+            <form action="#"  id="form-usuario">
+
+                <div class="d-flex">
+
+                    <div class="form-control d-flex-column">
+                        <label class="tform" for="nombre">Nombre:</label>
+                        <input type="text" class="input-search" name="nombre" id="nombre" placeholder="Ingrese su Nombre...">
+                    </div>
+
+                    <div class="form-control d-flex-column">
+                        <label  class="tform" for="apellido">Apellido:</label>
+                        <input type="text" class="input-search" name="apellido" id="apellido" placeholder="Ingrese su Apellido...">
+                    </div>
+
+                    <div class="form-control d-flex-column">
+                        <label class="tform" for="correo">Correo Electrónico:</label>
+                        <input type="text" class="input-search" name="correo" id="correo" placeholder="Ingrese su Corre Electrónico...">
+                    </div>
+
+                    <div class="form-control d-flex-column">
+                        <label class="tform"  for="telefono">Teléfono:</label>
+                        <input type="number" class="input-search" name="telefono" id="telefono" placeholder="Ingrese su número de Teléfono...">
+                    </div>
+                       
+                    <input type="hidden"  name="id-pizza" id="id-pizza">
+
+                </div>
+               
+                <button class="enviar" type="button" id="btn-save-usuario">Agregar</button>
+
+            </form> 
+
+        </section>
+
+        <br>
+        <br>
+        <section id="list" class="container">
+
+            <h2 class="nombre_de_plantilla"> Listado de usuarios </h2>
+
+            <table id="list-table-usuarios" class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo Electrónico</th>
+                        <th>Teléfono</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-table-usuarios">
+                    
+                </tbody>
+            </table>
+        </section>  
+    </main>
+
+    <footer>
+        <p><u>Ubicación:</u> Mar del Plata, Buenos Aires, Argentina</p>
+        <p><u>Dirección:</u> Bernardo de Irigoyen 3498</p>
+        <p><u>Teléfonos:</u> 451-6194 / 486-3137 </p>
+        <p><u>Días y horarios de atención:</u> Todos los días de 19 a 23.30 hs</p>
+        <p><u>Consultas:</u> francesco@hotmail.com</p>
+      </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/index.js"></script>
+    <script src="../static/js/crud-usuarios-fetch.js"></script>
+</body>
+
+</html>

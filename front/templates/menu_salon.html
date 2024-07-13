@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Francesco: Menú Salón</title>
+    <link rel="shortcut icon" href="../static/img/FAVICON/FAVICON.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+
+
+    <header>
+         <img src="../static/img/LOGO/logo.png.png" class="logo"  id="logo-left" alt="logo_pizzeria"> 
+        
+        <div class="Titulo">
+            <h1 id="Textopp">
+                Francesco, pizza a la piedra.
+                 <br /> <br />
+                Cocinando las mejores pizzas para vos
+                <i class="encabezado">desde 1985.</i>
+            </h1>
+        </div>
+
+        <img src="../static/img/LOGO/logo.png.png" class="logo" id="logo-right" alt="logo_pizzeria" />
+    
+    </header>
+
+
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="menu_salon.html">Menú Salón</a>
+        <a href="menu_delivery.html">Menú Delivery</a>
+        <a href="contacto.html">Contacto</a>
+        <!-- <a href="crud_pizzas.html">CRUD Pizzas</a>
+        <a href="crud_usuarios.html">CRUD Usuarios</a> -->
+        <a href="gestion-crud.html">Gestión</a>
+    </nav>
+
+    <main>
+
+        <h2 class="nombre_de_plantilla"> Menú Salón</h2>
+
+        <div class="columnpizzas">
+
+            <div>
+                <img src="../static/img/PIZZAS/MUZZARELLA.jpg" alt="Muzzarella" class="fotos_pizzas" />
+                <p class="name">MUZZARELLA</p>
+            </div>
+
+            <div>
+                <img src="../static/img/PIZZAS/NAPOLITANA_ESPECIAL.jpg" alt="NAPOLITANA ESPECIAL" class="fotos_pizzas" />
+                <p class="name">NAPOLITANA ESPECIAL</p>
+            </div>
+
+
+            <div>
+                <img src="../static/img/PIZZAS/SORRENTINA.jpeg" alt="SORRENTINA" class="fotos_pizzas" />
+                <p class="name">SORRENTINA</p>
+            </div>
+
+            <div>
+                <img src="../static/img/PIZZAS/POLLO.jpeg" alt="POLLO" class="fotos_pizzas" />
+                <p class="name">POLLO</p>
+            </div>
+
+            <div>
+                <img src="../static/img/PIZZAS/FGZ_RELLENA.jpeg" alt="FGZ RELLENA" class="fotos_pizzas" />
+                <p class="name">FUGAZZETTA RELLENA</p>
+            </div>
+
+            <div>
+                <img src="../static/img/PIZZAS/ESPINACA.jpeg" alt="ESPINACA" class="fotos_pizzas" />
+                <p class="name"> ESPINACA</p>
+            </div>
+
+        </div>
+
+        <h3> Nuestras Pizzas </h3>
+
+        <section class="tablas">
+            <table class="tablaprecios">
+
+                <thead>
+
+                    <tr>
+                        <th>VARIEDAD</th>
+                        <th>CHICA <br> <i>(4 porciones)</i> </th>
+                        <th>GRANDE <br> <i>(8 porciones)</i> </th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td> <strong>Muzzarella </strong> <i>(Salsa de Tomate, Muzzarrella, Aceitunas Verdes,
+                                Orégano)</i>
+                        </td>
+                        <td>$5000</td>
+                        <td>$8000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Muzzarella con Albahaca</strong> <i>(Salsa de Tomate, Muzzarrella, Albahaca,
+                                Aceitunas
+                                Verdes, Orégano)</i></td>
+                        <td>$6000</td>
+                        <td>$9000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Muzzarella con Rúcula</strong> <i>(Salsa de Tomate, Muzzarrella, Rúcula, Aceitunas
+                                Verdes, Orégano)</i></td>
+                        <td>$6000</td>
+                        <td>$9000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Muzzarella con Anchoas</strong> <i>(Salsa de Tomate, Muzzarrella, Anchoas, Aceitunas
+                                Verdes, Orégano)</i></td>
+                        <td>$6000</td>
+                        <td>$9000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Anchoas</strong> <i>(Salsa de Tomate, Anchoas, Orégano)</i></td>
+                        <td>$5000</td>
+                        <td>$8000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Ajo al Olio</strong> <i>(Salsa de Tomate, Ajo picado, Perejil)</i></td>
+                        <td>$3000</td>
+                        <td>$5000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Jamón</strong> <i>(Salsa de Tomate, Muzzarrella, Jamón, Aceitunas Verdes, Orégano)</i></td>
+                        <td>$6000</td>
+                        <td>$9000</td>
+                    </tr>
+
+                    <tr>
+                    <td> <strong>Especial</strong> <i>(Salsa de Tomate, Muzzarrella, Jamón, Morrones, Aceitunas Verdes, Orégano)</i></td>
+                    <td>$6500</td>
+                    <td>$10000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Nevada</strong> <i>(Salsa de Tomate, Muzzarrella, Jamón, Huevo Duro, Aceitunas Verdes, Orégano)</i></td>
+                        <td>$6500</td>
+                        <td>$10000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Napolitana</strong> <i>(Salsa de Tomate, Muzzarrella, Rodajas de Tomate, Orégano,
+                                Ajo,
+                                Perejil)</i></td>
+                        <td>$6000</td>
+                        <td>$9000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Napolitana con Albahaca</strong> <i>(Salsa de Tomate, Muzzarrella, Rodajas de
+                                Tomate,
+                                Albahaca, Orégano, Ajo, Perejil)</i></td>
+                        <td>$6500</td>
+                        <td>$10000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Napolitana Especial</strong> <i>(Salsa de Tomate, Muzzarrella, Rodajas de Tomate,
+                                Jamón,
+                                Orégano, Ajo, Perejil)</i></td>
+                        <td>$6500</td>
+                        <td>$10000</td>
+                    </tr>
+
+                    <tr>
+                        <td> <strong>Calabresa </strong> <i>(Salsa de Tomate, Muzzarrella, Longaniza Calabresa,
+                                Orégano)</i>
+                        </td>
+                        <td>$6000</td>
+                        <td>$9000</td>
+                    </tr>
+                    <tr>
+                        <td><strong> Española</strong> <i>(Salsa de Tomate, Muzzarrella, Cantimpalo, Morrones, Aceitunas
+                                Verdes, Orégano)</i></td>
+                        <td>$6500</td>
+                        <td>$10000</td>
+                    </tr>
+
+                    <tr>
+                        <td> <strong> Panceta </strong> <i>(Salsa de Tomate, Muzzarrella, Panceta, Cebolla de Verdeo,
+                                Aceitunas Verdes, Orégano)</i></td>
+                        <td>$6500</td>
+                        <td>$10000</td>
+                    </tr>
+
+                    <tr>
+                        <td> <strong>Sorrentina </strong> <i>(Salsa de Tomate, Muzzarrella, Jamón, Gratinado de
+                                Provolone,
+                                Morrones, Orégano)</i></td>
+                        <td>$7000</td>
+                        <td>$11000</td>
+                    </tr>
+
+                    <tr>
+                        <td> <strong>Roquefort </strong> <i>(Salsa de Tomate, Muzzarrella, Roquefort Aceitunas,
+                                Orégano)</i>
+                        </td>
+                        <td>$6500</td>
+                        <td>$10000</td>
+                    </tr>
+
+                    <tr>
+                        <td> <strong>Provolone </strong> <i>(Salsa de Tomate, Muzzarrella, Provolone, Orégano)</i> </td>
+                        <td>$6500</td>
+                        <td>$10000</td>
+                    </tr>
+
+                    <tr>
+                        <td> <strong> 4 Quesos </strong> <i>(Salsa de Tomate, Muzzarrella, Roquefort, Provolone,
+                                Reggianito,
+                                Orégano)</i> </td>
+                        <td>$6500</td>
+                        <td>$10000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Siciliana </strong> <i>(Salsa de Tomate, Muzzarrella, Rodajas de Tomate, Huevo Duro,
+                                Longaniza Calabresa, Aceitunas Verdes, Orégano)</i></td>
+                        <td>$6500</td>
+                        <td>$10000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Champiñón </strong> <i>(Salsa de Tomate, Muzzarrella, Champiñones, Orégano)</i></td>
+                        <td>$7500</td>
+                        <td>$11000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Palmitos </strong> <i>(Salsa de Tomate, Muzzarrella, Jamón, Palmitos, Salsa Golf,
+                                Aceitunas Negras, Orégano)</i></td>
+                        <td>$10000</td>
+                        <td>$16000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Palmitos a la Romana</strong> <i>(Salsa de Tomate, Muzzarrella, Roquefort, Jamón,
+                                Palmitos, Morrones, Aceitunas Negras, Orégano)</i></td>
+                        <td>$10500</td>
+                        <td>$17000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong> Ananá</strong> <i>(Salsa de Tomate, Muzzarrella, Jamón, Rodajas de Ananá,
+                                Cerezas)</i>
+                        </td>
+                        <td>$8000</td>
+                        <td>$12000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Fugazza</strong> <i>(Cebolla, Aceite de Oliva, Orégano)</i></td>
+                        <td>$4000</td>
+                        <td>$7000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fugazzetta </strong> <i>(Muzzarella, Cebolla, Aceite de Oliva, Orégano)</i></td>
+                        <td>$5500</td>
+                        <td>$8500</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Fugazzetta Especial</strong> <i>(Muzzarella, Cebolla, Jamón, Aceite de Oliva,
+                                Orégano)</i></td>
+                        <td>$6000</td>
+                        <td>$9000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Fugazzetta con Roquefort </strong> <i>(Muzzarella, Cebolla, Roquefort, Aceite de
+                                Oliva,
+                                Orégano)</i></td>
+                        <td>$6500</td>
+                        <td>$10000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Fugazzetta Rellena </strong> <i>(Doble masa rellena con Muzzarella, cubierta con
+                                Cebolla
+                                y Gratinado de Provolone)</i></td>
+                        <td>$7500</td>
+                        <td>$11000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Fugazzetta Rellena Especial </strong> <i> (Doble masa rellena con Muzzarella y
+                                Jamón,
+                                cubierta con Cebolla y Gratinado de Provolone)</i></td>
+                        <td>$8000</td>
+                        <td>$12000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Fugazzetta Rellena Napolitana </strong> <i>(Doble masa rellena con Muzzarella,
+                                Jamón,
+                                Rodajas de Tomate y Ajo, cubierta con Cebolla y Gratinado de Provolone)</i></td>
+                        <td>$8500</td>
+                        <td>$13000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>Rúcula </strong> <i>(Salsa de Tomate, Muzzarrella, Jamón Crudo, Rúcula, Aceitunas
+                                Verdes, Orégano)</i></td>
+                        <td>$7500</td>
+                        <td>$11000</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong> Pollo </strong> <i>(Salsa de Tomate, Muzzarrella, Pollo Salteado, Morrones,
+                                Aceitunas
+                                Verdes, Orégano, Perejil)</i></td>
+                        <td>$6500</td>
+                        <td>$10000</td>
+                    </tr>
+
+                    <tr>
+                        <td> <strong> Espinaca </strong> <i>(Salsa de Tomate, Muzzarrella, Espinaca, Gratinado de
+                                Provolone,
+                                Aceitunas Verdes, Orégano)</i> </td>
+                        <td>$6500</td>
+                        <td>$10000</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+
+       <h3> Calzones </h3>
+        <section class="tablas">
+            <table class="tablaprecios">
+
+                <thead>
+                    <tr>
+                        <th> VARIEDAD</th>
+                        <th>CHICO <br> <i>(4 porciones)</i> </th>
+                        <th>GRANDE <br> <i>(8 porciones)</i> </th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td> <strong>Calzone Napolitano</strong> <i>(Muzzarella, Jamón, Tomate, Ajo) </i></td>
+                        <td>$6500</td>
+                        <td>$11000</td>
+
+                    </tr>
+
+                    <tr>
+                        <td> <strong>Calzone Calabrés</strong> <i>(Muzzarella, Jamón, Provolone, Longaniza Calabresa)
+                            </i>
+                        </td>
+                        <td>$7500</td>
+                        <td>$12000</td>
+
+                    </tr>
+
+                    <tr>
+                        <td> <strong>Calzone de Pollo</strong> <i>(Muzzarella, Jamón, Pollo Salteado, Morrones)</i></td>
+                        <td>$7500</td>
+                        <td>$12000</td>
+
+                    </tr>
+
+                    <tr>
+                        <td> <strong>Calzone de Verdura</strong> <i>(Muzzarella, Jamón, Espinaca, Provolone,
+                                Morrones)</i>
+                        </td>
+                        <td>$7500</td>
+                        <td>$12000</td>
+
+                    </tr>
+
+                    <tr>
+                        <td> <strong>Calzone de Roquefort</strong> <i>(Muzzarella, Jamón, Roquefort) </i></td>
+                        <td>$8500</td>
+                        <td>$13000</td>
+                    </tr>
+
+                    <tr>
+                        <td> <strong>Calzone de Palmitos</strong> <i>(Muzzarella, Jamón, Palmitos, Salsa Golf) </i></td>
+                        <td>$13000</td>
+                        <td>$20000</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+        </section>
+
+       <h3> Empanadas y Fainá </h3>
+
+        <section class="tablas">
+
+            <table class="tablaprecios">
+
+                <thead>
+                <tr>
+                    <th> VARIEDAD</th>
+                    <th> UNIDAD </th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td><strong>Carne</strong></td>
+                    <td>$1000</td>
+                </tr>
+
+                <tr>
+                <td><strong>Pollo</strong></td>
+                <td>$1000</td>
+            </tr>
+            
+                <tr>
+                    <td><strong>Jamón y Queso</strong></td>
+                    <td>$1000</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Humita</strong></td>
+                    <td>$1000</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Capresse</strong></td>
+                    <td>$1000</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Panceta</strong></td>
+                    <td>$1000</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Verdura</strong></td>
+                    <td>$1000</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Roquefort y Cebolla</strong></td>
+                    <td>$1000</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Fainá</strong></td>
+                    <td>$750</td>
+                </tr>
+            </tbody>
+
+            </table>
+
+        </section>
+
+
+        
+
+
+        <h3> Postres </h3>
+        <section class="tablas">
+
+            <table class="tablapreciosx">
+
+                <tr>
+                    <td> <strong>Mousse</strong></td>
+                    <td> $4000</td>
+                </tr>
+
+                <tr>
+                    <td> <strong>Flan</strong></td>
+                    <td> $3500</td>
+                </tr>
+
+                <tr>
+                    <td> <strong>Bombon Suizo</strong></td>
+                    <td> $2500</td>
+                </tr>
+
+                <tr>
+                    <td> <strong>Almendrado</strong></td>
+                    <td> $2500 </td>
+                </tr>
+
+                <tr>
+                    <td><strong>Helado <i>(1 bocha)</i></strong></td>
+                    <td> $1500 </td>
+                </tr>
+
+                <tr>
+                    <td><strong> Helado <i>(2 bochas)</i></strong></td>
+                    <td>$2500</td>
+                </tr>
+                <tr>
+                    <td><strong> Adicional Crema y/o Dulce de leche</strong></td>
+                    <td>$1000</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    <section>
+
+            <div class="columnpizzas" id="column_postres">
+                <div>
+                    <img src="../static/img/POSTRES/ALMENDRADO.jpeg" alt="ALMENDRADO" class="fotos_postres"/>
+                    <p class="name">ALMENDRADO</p>
+                </div>
+
+                <div>
+                    <img src="../static/img/POSTRES/BOMBÓN_SUIZO.jpeg" alt="BOMBÓN_SUIZO" class="fotos_postres"/>
+                    <p  class="name">BOMBÓN SUIZO</p>
+                </div>
+
+                <div>
+                    <img src="../static/img/POSTRES/FLAN_CON_DULCE_Y_CREMA.jpeg" alt="FLAN CON DULCE Y CREMA" class="fotos_postres"/>
+                    <p  class="name">FLAN C/ DULCE Y CREMA</p>
+                </div>
+            
+             </div>
+
+            </section>
+
+
+       <h3> Bebidas sin alcohol </h3>
+
+        <section class="tablas">
+            <table class="tablapreciosx">
+
+                <tr>
+                    <td><strong>Agua mineral sin gas</strong> <i>(Eco de los Andes, 500 ml) </i> </td>
+                    <td>$1800</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Agua mineral con gas </strong><i>(Eco de los Andes, 500 ml) </i></td>
+                    <td>$1800</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Lata Gaseosa</strong> <i>(Línea Pepsi, 354 ml)</i></td>
+                    <td>$2000</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Botella Gaseosa </strong> <i>(Línea Pepsi, 1500 ml) </i></td>
+                    <td>$3500</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Agua Saborizada </strong><i> (Aquarius, 500 ml)</i></td>
+                    <td>$2000</td>
+                </tr>
+            </table>
+
+        </section>
+
+        <h3> Bebidas con alcohol </h3>
+        <h4> Cervezas </h4>
+
+        <section class="tablas">
+            <table class="tablapreciosx">
+
+            <thead>
+                <tr>
+                    <th>Variedad</th>
+                    <th>Lata <i>(473 ml)</i></th>
+                    <th>Botella <i>(970 ml)</i></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><strong>Quilmes Cristal</strong></td>
+                    <td> $1800</td>
+                    <td>$2800</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Quilmes 1890</strong></td>
+                    <td>$2000</td>
+                    <td>$3000</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Quilmes Stout</strong></td>
+                    <td>$2000</td>
+                    <td>$3000</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Andes Dorada</strong></td>
+                    <td>$2200</td>
+                    <td>$3200</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Andes Ipa</strong></td>
+                    <td>$2200</td>
+                    <td>$3200</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Andes Roja</strong></td>
+                    <td>$2200</td>
+                    <td>$3200</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Stella Artois</strong></td>
+                    <td>$2500</td>
+                    <td>$3500</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Stella Noire</strong></td>
+                    <td>$2500</td>
+                    <td>$3500</td>
+                </tr>
+
+            </tbody>
+
+            </table>
+        </section>
+
+        <h4> Vinos tintos </h4>
+
+        <section class="tablas">
+            <table class="tablapreciosx">
+
+                <thead>
+                <tr>
+                    <th>Tintos</th>
+                    <th>Botella 3/8</th>
+                    <th>Botella 3/4</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><strong>López</strong></td>
+                    <td>$3500</td>
+                    <td>$5500</td>
+                </tr>
+
+                <tr>
+                    <td><strong>San Felipe</strong></td>
+                    <td>$3500</td>
+                    <td>$5500</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Valmont</strong></td>
+                    <td>$3500</td>
+                    <td>$5500</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Latitud 33</strong></td>
+                    <td>$4000</td>
+                    <td>$6500</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Emilia</strong></td>
+                    <td>$4500</td>
+                    <td>$7500</td>
+                </tr>
+
+            </tbody>
+
+            </table>
+            
+        </section>
+
+<h4> Vinos Blancos </h4>
+
+        <section class="tablas">
+            <table class="tablapreciosx">
+
+                <thead>
+
+                <tr>
+                    <th>Blancos</th>
+                    <th>Botella 3/8</th>
+                    <th>Botella 3/4</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><strong>Rincón Famoso</strong></td>
+                    <td>$3500</td>
+                    <td>$5500</td>
+                </tr>
+
+                <tr>
+                    <td><strong>López</strong> </td>
+                    <td>$3500</td>
+                    <td>$5500</td>
+                </tr>
+
+                <tr>
+                    <td><strong>San Felipe</strong></td>
+                    <td>$3500</td>
+                    <td>$5500</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Castel Chandon</strong></td>
+                    <td>$4000</td>
+                    <td>$6500</td>
+                </tr>
+
+                <tr>
+                    <td><strong>Emilia</strong> </td>
+                    <td>$4500</td>
+                    <td>$7500</td>
+                </tr>
+
+            </tbody>
+
+            </table>
+
+        </section>
+
+
+    </main>
+    <br><br>
+
+    <footer>
+        <p><u>Ubicación:</u> Mar del Plata, Buenos Aires, Argentina</p>
+        <p><u>Dirección:</u> Bernardo de Irigoyen 3498</p>
+        <p><u>Teléfonos:</u> 451-6194 / 486-3137 </p>
+        <p><u>Días y horarios de atención:</u> Todos los días de 19 a 23.30 hs</p>
+        <p><u>Consultas:</u> francesco@hotmail.com</p>
+    </footer>
+
+
+</body>
+
+
+
+</html>
