@@ -1,4 +1,7 @@
-const BASEURL = 'http://127.0.0.1:5000';
+const BASEURL ='http://127.0.0.1:5000';
+
+// const BASEURL='https://com24187.pythonanywhere.com/'
+
 
 /**
  * Función para realizar una petición fetch con JSON.
@@ -29,7 +32,7 @@ async function fetchData(url, method, data = null) {
 
 /**
  * Función para comunicarse con el servidor para poder Crear o Actualizar
- * un registro de pizza
+ * un registro de usuario
  * @returns 
  */
 async function saveUsuario(){
@@ -38,7 +41,7 @@ async function saveUsuario(){
   const apellido = document.querySelector('#apellido').value;
   const correo = document.querySelector('#correo').value;
   const telefono = document.querySelector('#telefono').value;
-  
+
   //VALIDACION DE FORMULARIO
   if (!nombre || !apellido || !correo || !telefono) {
     Swal.fire({
@@ -49,27 +52,26 @@ async function saveUsuario(){
     });
     return;
   }
-  // Crea un objeto con los datos de la pizza
+  // Crea un objeto con los datos del usuario
   const usuarioData = {
-
       nombre: nombre,
       apellido: apellido,
       correo: correo,
-      telefono: telefono
+      telefono: telefono      
   };
 
     
   let result = null;
-  // Si hay un idPizza, realiza una petición PUT para actualizar la película existente
+  // Si hay un idUsuario, realiza una petición PUT para actualizar el usuario existente
   if(idUsuario!==""){
     result = await fetchData(`${BASEURL}/api/usuarios/${idUsuario}`, 'PUT', usuarioData);
   }else{
-    // Si no hay idPizza, realiza una petición POST para crear una nueva pizza
+    // Si no hay idUsuario, realiza una petición POST para crear un nuevo usuario
     result = await fetchData(`${BASEURL}/api/usuarios/`, 'POST', usuarioData);
   }
   
   const formUsuario = document.querySelector('#form-usuario');
-  formPizza.reset();
+  formUsuario.reset();
   Swal.fire({
     title: 'Exito!',
     text: result.message,
@@ -81,21 +83,21 @@ async function saveUsuario(){
 
 
 /**
- * Funcion que permite crear un elemento <tr> para la tabla de peliculas
+ * Funcion que permite crear un elemento <tr> para la tabla de usuarios
  * por medio del uso de template string de JS.
  */
 async function showUsuarios(){
   let usuarios =  await fetchData(BASEURL+'/api/usuarios/', 'GET');
   const tableUsuarios = document.querySelector('#list-table-usuarios tbody');
   tableUsuarios.innerHTML='';
-  usuarios.forEach((usuario,index) => {
+  usuarios.forEach((usuario) => {
     let tr = `<tr>
                   <td>${usuario.nombre}</td>
                   <td>${usuario.apellido}</td>
                   <td>${usuario.correo}</td>
                   <td>${usuario.telefono}</td>
                   <td>
-                      <button class="enviar" id="editar" onclick='updateUsuario(${usuario.id_usuario})'><i class="fa fa-pencil" > Actualizar</button></i>
+                      <button class="enviar" id="editar" onclick='updateUsuario(${usuario.id_usuario})'><i class="fa fa-pencil" > Editar</button></i>
                       <button class="enviar" id="borrar" onclick='deleteUsuario(${usuario.id_usuario})'><i class="fa fa-trash" > Eliminar</button></i>
                   </td>
                 </tr>`;
@@ -104,7 +106,7 @@ async function showUsuarios(){
 }
   
 /**
- * Function que permite eliminar una pizza del array del localstorage
+ * Function que permite eliminar una pelicula del array del localstorage
  * de acuedo al indice del mismo
  * @param {number} id posición del array que se va a eliminar
  */
@@ -125,12 +127,12 @@ function deleteUsuario(id){
 
 
 /**
- * Function que permite cargar el formulario con los datos de la pizza 
+ * Function que permite cargar el formulario con los datos de la pelicula 
  * para su edición
- * @param {number} id Id de la pizza que se quiere editar
+ * @param {number} id Id de la pelicula que se quiere editar
  */
 async function updateUsuario(id){
-  //Buscamos en el servidor la pizza de acuerdo al id
+  //Buscamos en el servidor el usuario de acuerdo al id
   let response = await fetchData(`${BASEURL}/api/usuarios/${id}`, 'GET');
   const idUsuario = document.querySelector('#id-usuario');
   const nombre = document.querySelector('#nombre');
@@ -138,7 +140,7 @@ async function updateUsuario(id){
   const correo = document.querySelector('#correo');
   const telefono = document.querySelector('#telefono');
   
-  idUsuario.value = response.id_pizza;
+  idUsuario.value = response.id_usuario;
   nombre.value = response.nombre;
   apellido.value = response.apellido;
   correo.value = response.correo;

@@ -1,5 +1,8 @@
 const BASEURL = 'http://127.0.0.1:5000';
 
+// const BASEURL='https://com24187.pythonanywhere.com/'
+
+
 /**
  * Función para realizar una petición fetch con JSON.
  * @param {string} url - La URL a la que se realizará la petición.
@@ -29,7 +32,7 @@ async function fetchData(url, method, data = null) {
 
 /**
  * Función para comunicarse con el servidor para poder Crear o Actualizar
- * un registro de pizza
+ * un registro de pelicula
  * @returns 
  */
 async function savePizza(){
@@ -50,9 +53,8 @@ async function savePizza(){
     });
     return;
   }
-  // Crea un objeto con los datos de la pizza
+  // Crea un objeto con los datos de la película
   const pizzaData = {
-
       variedad: variedad,
       ingredientes: ingredientes,
       tamanio: tamanio,
@@ -62,7 +64,7 @@ async function savePizza(){
 
     
   let result = null;
-  // Si hay un idPizza, realiza una petición PUT para actualizar la película existente
+  // Si hay un idPizza, realiza una petición PUT para actualizar la pizza existente
   if(idPizza!==""){
     result = await fetchData(`${BASEURL}/api/pizzas/${idPizza}`, 'PUT', pizzaData);
   }else{
@@ -83,14 +85,14 @@ async function savePizza(){
 
 
 /**
- * Funcion que permite crear un elemento <tr> para la tabla de peliculas
+ * Funcion que permite crear un elemento <tr> para la tabla de pizzas
  * por medio del uso de template string de JS.
  */
 async function showPizzas(){
   let pizzas =  await fetchData(BASEURL+'/api/pizzas/', 'GET');
   const tablePizzas = document.querySelector('#list-table-pizzas tbody');
   tablePizzas.innerHTML='';
-  pizzas.forEach((pizza,index) => {
+  pizzas.forEach((pizza) => {
     let tr = `<tr>
                   <td>${pizza.variedad}</td>
                   <td>${pizza.ingredientes}</td>
@@ -98,7 +100,7 @@ async function showPizzas(){
                   <td>${pizza.precio_salon}</td>
                   <td>${pizza.precio_delivery}</td>
                   <td>
-                      <button class="enviar" id="editar" onclick='updatePizza(${pizza.id_pizza})'><i class="fa fa-pencil" > Actualizar</button></i>
+                      <button class="enviar" id="editar" onclick='updatePizza(${pizza.id_pizza})'><i class="fa fa-pencil" > Editar</button></i>
                       <button class="enviar" id="borrar" onclick='deletePizza(${pizza.id_pizza})'><i class="fa fa-trash" > Eliminar</button></i>
                   </td>
                 </tr>`;
@@ -107,7 +109,7 @@ async function showPizzas(){
 }
   
 /**
- * Function que permite eliminar una pizza del array del localstorage
+ * Function que permite eliminar una pelicula del array del localstorage
  * de acuedo al indice del mismo
  * @param {number} id posición del array que se va a eliminar
  */
@@ -148,13 +150,14 @@ async function updatePizza(id){
   tamanio.value = response.tamanio;
   precio_salon.value = response.precio_salon;
   precio_delivery.value = response.precio_delivery;
+
 }
   
 // Escuchar el evento 'DOMContentLoaded' que se dispara cuando el 
 // contenido del DOM ha sido completamente cargado y parseado.
 document.addEventListener('DOMContentLoaded',function(){
-  const btnSavePizza = document.querySelector('#btn-save-pizza');
+  const btnSaveMovie = document.querySelector('#btn-save-pizza');
   //ASOCIAR UNA FUNCION AL EVENTO CLICK DEL BOTON
-  btnSavePizza.addEventListener('click',savePizza);
+  btnSaveMovie.addEventListener('click',savePizza);
   showPizzas();
 });
